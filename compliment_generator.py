@@ -11,7 +11,7 @@ class ComplimentGenerator:
         x = random.randint(1, 18)
         # Example...
         compliment = 'You are Beautiful.'
-        with open("helper_library/compliments.txt", "r") as compliment_file:
+        with open("compliments.txt", "r") as compliment_file:
             for i in range(x):
                 compliment = compliment_file.readline()
         return compliment

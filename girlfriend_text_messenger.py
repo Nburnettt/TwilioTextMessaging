@@ -1,6 +1,6 @@
-from helper_library.twilio_text_messenger import TwilioTextMessenger
-from helper_library.weather_grabber import WeatherGrabber
-from helper_library.compliment_generator import ComplimentGenerator
+from twilio_text_messenger import TwilioTextMessenger
+from weather_grabber import WeatherGrabber
+from compliment_generator import ComplimentGenerator
 
 
 class GirlfriendTextMessenger(TwilioTextMessenger):
