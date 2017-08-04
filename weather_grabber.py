@@ -1,13 +1,13 @@
 from apixu.client import ApixuClient, ApixuException
-from secrets import api_key
 
 
 class WeatherGrabber:
-    def __init__(self, city):
+    def __init__(self, api_key, city):
+        self.api_key = api_key
         self.city = city
 
     def get_today(self):
-        client = ApixuClient(api_key)
+        client = ApixuClient(self.api_key)
         current = client.getForecastWeather(q=self.city, days=1)
         high = current['forecast']['forecastday'][0]['day']['maxtemp_f']
         low = current['forecast']['forecastday'][0]['day']['mintemp_f']
