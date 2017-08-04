@@ -1,4 +1,4 @@
-from girlfriend_text_messenger import GirlfriendTextMessenger
+from helper_library.girlfriend_text_messenger import GirlfriendTextMessenger
 from secrets import *
 
 kwargs = {'contacts': contacts,
