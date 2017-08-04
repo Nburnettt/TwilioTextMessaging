@@ -1,4 +1,4 @@
-from twilio_text_messenger import TwilioTextMessenger
+from girlfriend_text_messenger import GirlfriendTextMessenger
 
 if __name__ == '__main__':
-    TwilioTextMessenger().girlfriend_text()
+    GirlfriendTextMessenger().send_girlfriend_text()
