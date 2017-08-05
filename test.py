@@ -1,0 +1,3 @@
+from lib_girlfriend_text_messenger import GirlfriendTextMessenger
+
+GirlfriendTextMessenger().send_girlfriend_text()
