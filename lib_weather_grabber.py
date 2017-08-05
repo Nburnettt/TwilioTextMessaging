@@ -1,6 +1,7 @@
-from apixu.client import ApixuClient, ApixuException
+# from apixu.client import ApixuClient, ApixuException
 from urllib import request
 import ast
+
 
 class WeatherGrabber:
     def __init__(self, api_key, city):
@@ -8,7 +9,6 @@ class WeatherGrabber:
         self.city = city
 
     def get_today(self):
-        client = ApixuClient(self.api_key)
         url = 'https://api.apixu.com/v1/forecast.json?key={}&q={}'.format(self.api_key, self.city)
         response = request.urlopen(url).read().decode('utf-8')
         current = ast.literal_eval(response)
