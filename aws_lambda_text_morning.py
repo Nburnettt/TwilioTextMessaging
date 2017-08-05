@@ -3,8 +3,8 @@ from secrets import *
 
 client = boto3.client(
     'lambda', 'us-west-2',
-    aws_access_key_id='AKIAI4X7QTYOVDHHV6EA',
-    aws_secret_access_key='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'
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key
 )
 function_name = 'send-text'
 client.delete_function(FunctionName=function_name)
